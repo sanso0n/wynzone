@@ -1,0 +1,1114 @@
+{
+  "cycles": [
+    {
+      "cycleId": "Diamond_Group_Abril",
+      "label": "Diamond Group April",
+      "division": "Diamond",
+      "status": "closed",
+      "narrative": "A four-week campaign at the top division. Lost all four weeks, demoted back to Gold. Total: 16.46 B pts.",
+      "weeks": [
+        {
+          "weekNumber": 1,
+          "rival": "[OM3N]Dark Ascendancy",
+          "result": "L",
+          "top3": [
+            {
+              "rank": 1,
+              "name": "Z286",
+              "country": "Canada",
+              "points": 100113434
+            },
+            {
+              "rank": 2,
+              "name": "sorryGotHIGH",
+              "country": "Great Britain",
+              "points": 98259523
+            },
+            {
+              "rank": 3,
+              "name": "Guervo 88",
+              "country": "Argentinien",
+              "points": 89304162
+            }
+          ],
+          "byDay": {
+            "Monday": {
+              "active": 97,
+              "points": 780707862,
+              "pctGreen": 0.629,
+              "avgCoffersLost": 0.71
+            },
+            "Tuesday": {
+              "active": 95,
+              "points": 379800312,
+              "pctGreen": 0.274,
+              "avgCoffersLost": 1.68
+            },
+            "Wednesday": {
+              "active": 96,
+              "points": 407234364,
+              "pctGreen": 0.281,
+              "avgCoffersLost": 1.71
+            },
+            "Thursday": {
+              "active": 95,
+              "points": 953073758,
+              "pctGreen": 0.737,
+              "avgCoffersLost": 0.8
+            },
+            "Friday": {
+              "active": 95,
+              "points": 361474054,
+              "pctGreen": 0.232,
+              "avgCoffersLost": 2.01
+            },
+            "Saturday": {
+              "active": 98,
+              "points": 497981032,
+              "pctGreen": 0.408,
+              "avgCoffersLost": 2.33
+            }
+          },
+          "totalPoints": 3380271382,
+          "avgPctGreenWeek": 0.4268333333333334,
+          "avgCoffersLostPerPlayer": 1.5399999999999998,
+          "diamondsLost": 11812535,
+          "diamondsPossible": 36375370,
+          "diamondsLostPct": 0.3247399270440411
+        },
+        {
+          "weekNumber": 2,
+          "rival": "[eTk]Elite T Killers",
+          "result": "L",
+          "top3": [
+            {
+              "rank": 1,
+              "name": "Reaper25908",
+              "country": "Great Britain",
+              "points": 127825566
+            },
+            {
+              "rank": 2,
+              "name": "Pumpin",
+              "country": "Spain",
+              "points": 124729687
+            },
+            {
+              "rank": 3,
+              "name": "Lv21",
+              "country": "Algeria",
+              "points": 109678639
+            }
+          ],
+          "byDay": {
+            "Monday": {
+              "active": 97,
+              "points": 724913274,
+              "pctGreen": 0.598,
+              "avgCoffersLost": 0.81
+            },
+            "Tuesday": {
+              "active": 97,
+              "points": 428332823,
+              "pctGreen": 0.278,
+              "avgCoffersLost": 1.77
+            },
+            "Wednesday": {
+              "active": 98,
+              "points": 373822240,
+              "pctGreen": 0.255,
+              "avgCoffersLost": 1.85
+            },
+            "Thursday": {
+              "active": 96,
+              "points": 1141442981,
+              "pctGreen": 0.74,
+              "avgCoffersLost": 0.64
+            },
+            "Friday": {
+              "active": 98,
+              "points": 429708971,
+              "pctGreen": 0.255,
+              "avgCoffersLost": 2.01
+            },
+            "Saturday": {
+              "active": 99,
+              "points": 810129493,
+              "pctGreen": 0.566,
+              "avgCoffersLost": 1.38
+            }
+          },
+          "totalPoints": 3908349782,
+          "avgPctGreenWeek": 0.4486666666666666,
+          "avgCoffersLostPerPlayer": 1.41,
+          "diamondsLost": 11114180,
+          "diamondsPossible": 36804000,
+          "diamondsLostPct": 0.301982936637322
+        },
+        {
+          "weekNumber": 3,
+          "rival": "[Dsq]Dark Squadron",
+          "result": "L",
+          "top3": [
+            {
+              "rank": 1,
+              "name": "Topic3074",
+              "country": "Great Britain",
+              "points": 195944304
+            },
+            {
+              "rank": 2,
+              "name": "Pumpin",
+              "country": "Spain",
+              "points": 179739794
+            },
+            {
+              "rank": 3,
+              "name": "AegNoR",
+              "country": "Spain",
+              "points": 171836957
+            }
+          ],
+          "byDay": {
+            "Monday": {
+              "active": 97,
+              "points": 702290170,
+              "pctGreen": 0.629,
+              "avgCoffersLost": 0.68
+            },
+            "Tuesday": {
+              "active": 96,
+              "points": 445579294,
+              "pctGreen": 0.302,
+              "avgCoffersLost": 1.59
+            },
+            "Wednesday": {
+              "active": 99,
+              "points": 475969565,
+              "pctGreen": 0.323,
+              "avgCoffersLost": 1.69
+            },
+            "Thursday": {
+              "active": 99,
+              "points": 1088890175,
+              "pctGreen": 0.687,
+              "avgCoffersLost": 0.74
+            },
+            "Friday": {
+              "active": 96,
+              "points": 553008562,
+              "pctGreen": 0.385,
+              "avgCoffersLost": 1.51
+            },
+            "Saturday": {
+              "active": 98,
+              "points": 1333228329,
+              "pctGreen": 0.653,
+              "avgCoffersLost": 1.19
+            }
+          },
+          "totalPoints": 4598966095,
+          "avgPctGreenWeek": 0.4965,
+          "avgCoffersLostPerPlayer": 1.2333333333333334,
+          "diamondsLost": 9600000,
+          "diamondsPossible": 36498350,
+          "diamondsLostPct": 0.2630255888279881
+        },
+        {
+          "weekNumber": 4,
+          "rival": "[Nexo]Inexorable",
+          "result": "L",
+          "top3": [
+            {
+              "rank": 1,
+              "name": "Reaper25908",
+              "country": "Great Britain",
+              "points": 188448427
+            },
+            {
+              "rank": 2,
+              "name": "Topic3074",
+              "country": "Great Britain",
+              "points": 177507917
+            },
+            {
+              "rank": 3,
+              "name": "AegNoR",
+              "country": "Spain",
+              "points": 149665155
+            }
+          ],
+          "byDay": {
+            "Monday": {
+              "active": 99,
+              "points": 706630296,
+              "pctGreen": 0.586,
+              "avgCoffersLost": 0.84
+            },
+            "Tuesday": {
+              "active": 99,
+              "points": 450040152,
+              "pctGreen": 0.323,
+              "avgCoffersLost": 1.6
+            },
+            "Wednesday": {
+              "active": 99,
+              "points": 437630666,
+              "pctGreen": 0.273,
+              "avgCoffersLost": 1.8
+            },
+            "Thursday": {
+              "active": 99,
+              "points": 1216682321,
+              "pctGreen": 0.778,
+              "avgCoffersLost": 0.68
+            },
+            "Friday": {
+              "active": 99,
+              "points": 493976503,
+              "pctGreen": 0.414,
+              "avgCoffersLost": 1.56
+            },
+            "Saturday": {
+              "active": 99,
+              "points": 1270834300,
+              "pctGreen": 0.505,
+              "avgCoffersLost": 1.81
+            }
+          },
+          "totalPoints": 4575794238,
+          "avgPctGreenWeek": 0.47983333333333333,
+          "avgCoffersLostPerPlayer": 1.3816666666666668,
+          "diamondsLost": 9761790,
+          "diamondsPossible": 36435960,
+          "diamondsLostPct": 0.26791636613938535
+        }
+      ]
+    },
+    {
+      "cycleId": "Gold_Group_Mayo",
+      "label": "Gold Group May",
+      "division": "Gold",
+      "status": "in_progress",
+      "narrative": "Back to Gold after a winless Diamond run. Week 1 vs OM3N lost.",
+      "weeks": [
+        {
+          "weekNumber": 1,
+          "rival": "[OM3N]Dark Ascendancy",
+          "result": "L",
+          "byDay": {
+            "Monday": {
+              "active": 98,
+              "points": 811800807,
+              "pctGreen": 0.704,
+              "avgCoffersLost": 0.58
+            },
+            "Tuesday": {
+              "active": 100,
+              "points": 446451290,
+              "pctGreen": 0.37,
+              "avgCoffersLost": 1.7
+            },
+            "Wednesday": {
+              "active": 99,
+              "points": 496786169,
+              "pctGreen": 0.424,
+              "avgCoffersLost": 1.49
+            },
+            "Thursday": {
+              "active": 100,
+              "points": 971542509,
+              "pctGreen": 0.73,
+              "avgCoffersLost": 0.99
+            },
+            "Friday": {
+              "active": 100,
+              "points": 466867904,
+              "pctGreen": 0.35,
+              "avgCoffersLost": 1.62
+            },
+            "Saturday": {
+              "active": 100,
+              "points": 892358276,
+              "pctGreen": 0.5,
+              "avgCoffersLost": 1.77
+            }
+          },
+          "totalPoints": 4085806955,
+          "avgPctGreenWeek": 0.513,
+          "avgCoffersLostPerPlayer": 1.36,
+          "diamondsLost": 9181705,
+          "diamondsPossible": 36619530,
+          "diamondsLostPct": 0.2507324643434801
+        },
+        {
+          "weekNumber": 2,
+          "rival": "[U4E1]UNTAMED4EVER",
+          "result": "W",
+          "byDay": {
+            "Monday": {
+              "active": 100,
+              "points": 723172068,
+              "pctGreen": 0.65,
+              "avgCoffersLost": 0.69
+            },
+            "Tuesday": {
+              "active": 100,
+              "points": 432226859,
+              "pctGreen": 0.8,
+              "avgCoffersLost": 0.42
+            },
+            "Wednesday": {
+              "active": 99,
+              "points": 459907941,
+              "pctGreen": 0.33,
+              "avgCoffersLost": 1.72
+            },
+            "Thursday": {
+              "active": 101,
+              "points": 1186263102,
+              "pctGreen": 0.8,
+              "avgCoffersLost": 0.44
+            },
+            "Friday": {
+              "active": 99,
+              "points": 480502737,
+              "pctGreen": 0.62,
+              "avgCoffersLost": 0.79
+            },
+            "Saturday": {
+              "active": 100,
+              "points": 998168719,
+              "pctGreen": 0.72,
+              "avgCoffersLost": 0.62
+            }
+          },
+          "totalPoints": 4280241426,
+          "avgPctGreenWeek": 0.653333333333333,
+          "avgCoffersLostPerPlayer": 0.78,
+          "diamondsLost": 9621835,
+          "diamondsPossible": 36804000,
+          "diamondsLostPct": 0.2614344908162156,
+          "dailyResults": {
+            "Monday": "W",
+            "Tuesday": "W",
+            "Wednesday": "W",
+            "Thursday": "W",
+            "Friday": "W",
+            "Saturday": "W"
+          },
+          "top3": [
+            {
+              "rank": 1,
+              "name": "Topic3074",
+              "country": "Great Britain",
+              "points": 189596267,
+              "cofGained": 108,
+              "cofPossible": 108
+            },
+            {
+              "rank": 2,
+              "name": "ODIN",
+              "country": "Vietnam",
+              "points": 159936543,
+              "cofGained": 106,
+              "cofPossible": 108
+            },
+            {
+              "rank": 3,
+              "name": "Robin",
+              "country": "India",
+              "points": 114417929,
+              "cofGained": 97,
+              "cofPossible": 108
+            }
+          ]
+        },
+        {
+          "weekNumber": 3,
+          "rival": "[QmQ]WN_QueMiedo",
+          "result": "W",
+          "byDay": {
+            "Monday": {
+              "active": 93,
+              "points": 682671186,
+              "pctGreen": 0.613,
+              "avgCoffersLost": 0.72
+            },
+            "Tuesday": {
+              "active": 96,
+              "points": 458017978,
+              "pctGreen": 0.365,
+              "avgCoffersLost": 1.32
+            },
+            "Wednesday": {
+              "active": 93,
+              "points": 509180215,
+              "pctGreen": 0.398,
+              "avgCoffersLost": 1.31
+            },
+            "Thursday": {
+              "active": 94,
+              "points": 1151681563,
+              "pctGreen": 0.83,
+              "avgCoffersLost": 0.34
+            },
+            "Friday": {
+              "active": 95,
+              "points": 463842853,
+              "pctGreen": 0.368,
+              "avgCoffersLost": 1.51
+            },
+            "Saturday": {
+              "active": 97,
+              "points": 706176595,
+              "pctGreen": 0.505,
+              "avgCoffersLost": 1.54
+            }
+          },
+          "totalPoints": 3971570390,
+          "avgPctGreenWeek": 0.513166666666667,
+          "avgCoffersLostPerPlayer": 1.12333333333333,
+          "diamondsLost": 8081085,
+          "diamondsPossible": 34839020,
+          "diamondsLostPct": 0.23195500332672964,
+          "dailyResults": {
+            "Monday": "W",
+            "Tuesday": "W",
+            "Wednesday": "W",
+            "Thursday": "W",
+            "Friday": "W",
+            "Saturday": "W"
+          },
+          "top3": [
+            {
+              "rank": 1,
+              "name": "Topic3074",
+              "country": "Great Britain",
+              "points": 187506589,
+              "cofGained": 108,
+              "cofPossible": 108
+            },
+            {
+              "rank": 2,
+              "name": "Nickyadyta",
+              "country": "Germany",
+              "points": 128856649,
+              "cofGained": 101,
+              "cofPossible": 108
+            },
+            {
+              "rank": 3,
+              "name": "xxxK1nG",
+              "country": "Monaco",
+              "points": 97472483,
+              "cofGained": 108,
+              "cofPossible": 108
+            }
+          ]
+        },
+        {
+          "weekNumber": 4,
+          "rival": "[TDSm]TDS Main Ally",
+          "result": "W",
+          "byDay": {
+            "Monday": {
+              "active": 95,
+              "points": 682533752,
+              "pctGreen": 0.621,
+              "avgCoffersLost": 0.63
+            },
+            "Tuesday": {
+              "active": 91,
+              "points": 441547262,
+              "pctGreen": 0.396,
+              "avgCoffersLost": 1.13
+            },
+            "Wednesday": {
+              "active": 95,
+              "points": 350928719,
+              "pctGreen": 0.2,
+              "avgCoffersLost": 1.82
+            },
+            "Thursday": {
+              "active": 89,
+              "points": 1016108375,
+              "pctGreen": 0.787,
+              "avgCoffersLost": 0.47
+            },
+            "Friday": {
+              "active": 95,
+              "points": 407081650,
+              "pctGreen": 0.358,
+              "avgCoffersLost": 1.76
+            },
+            "Saturday": {
+              "active": 96,
+              "points": 827950373,
+              "pctGreen": 0.771,
+              "avgCoffersLost": 0.61
+            }
+          },
+          "totalPoints": 3726150131,
+          "avgPctGreenWeek": 0.522166666666667,
+          "avgCoffersLostPerPlayer": 1.07,
+          "diamondsLost": 7744270,
+          "diamondsPossible": 34409490,
+          "diamondsLostPct": 0.2250620395710602,
+          "dailyResults": {
+            "Monday": "W",
+            "Tuesday": "W",
+            "Wednesday": "W",
+            "Thursday": "W",
+            "Friday": "W",
+            "Saturday": "W"
+          },
+          "top3": [
+            {
+              "rank": 1,
+              "name": "---Lezo---",
+              "country": "Spain",
+              "points": 157573699,
+              "cofGained": 162,
+              "cofPossible": 162
+            },
+            {
+              "rank": 2,
+              "name": "ENG°ING°ENG°",
+              "country": "Japan",
+              "points": 145827905,
+              "cofGained": 150,
+              "cofPossible": 162
+            },
+            {
+              "rank": 3,
+              "name": "Nickyadyta",
+              "country": "Germany",
+              "points": 121107263,
+              "cofGained": 149,
+              "cofPossible": 162
+            }
+          ]
+        }
+      ],
+      "coffersCumulative": {
+        "---Lezo---": {
+          "gained": 162,
+          "possible": 162,
+          "percentage": 100
+        },
+        "ENG°ING°ENG°": {
+          "gained": 150,
+          "possible": 162,
+          "percentage": 92.59
+        },
+        "Nickyadyta": {
+          "gained": 149,
+          "possible": 162,
+          "percentage": 91.98
+        },
+        "xxxK1nG": {
+          "gained": 152,
+          "possible": 162,
+          "percentage": 93.83
+        },
+        "Ayalara": {
+          "gained": 161,
+          "possible": 162,
+          "percentage": 99.38
+        },
+        "ODIN": {
+          "gained": 147,
+          "possible": 162,
+          "percentage": 90.74
+        },
+        "chriska80": {
+          "gained": 162,
+          "possible": 162,
+          "percentage": 100
+        },
+        "outlaw": {
+          "gained": 153,
+          "possible": 162,
+          "percentage": 94.44
+        },
+        "Topic3074": {
+          "gained": 161,
+          "possible": 162,
+          "percentage": 99.38
+        },
+        "Cuervo 88": {
+          "gained": 161,
+          "possible": 162,
+          "percentage": 99.38
+        },
+        "Pumpin": {
+          "gained": 162,
+          "possible": 162,
+          "percentage": 100
+        },
+        "Mr been": {
+          "gained": 152,
+          "possible": 162,
+          "percentage": 93.83
+        },
+        "Deadreckoning": {
+          "gained": 160,
+          "possible": 162,
+          "percentage": 98.77
+        },
+        "Kernow": {
+          "gained": 162,
+          "possible": 162,
+          "percentage": 100
+        },
+        "Khnzada": {
+          "gained": 160,
+          "possible": 162,
+          "percentage": 98.77
+        },
+        "faab76": {
+          "gained": 141,
+          "possible": 162,
+          "percentage": 87.04
+        },
+        "Bivane": {
+          "gained": 142,
+          "possible": 162,
+          "percentage": 87.65
+        },
+        "Rob ert": {
+          "gained": 113,
+          "possible": 144,
+          "percentage": 78.47
+        },
+        "Paromeitmad": {
+          "gained": 153,
+          "possible": 162,
+          "percentage": 94.44
+        },
+        "QuintGas": {
+          "gained": 150,
+          "possible": 162,
+          "percentage": 92.59
+        },
+        "AegNoR": {
+          "gained": 161,
+          "possible": 162,
+          "percentage": 99.38
+        },
+        "Lafiko": {
+          "gained": 147,
+          "possible": 162,
+          "percentage": 90.74
+        },
+        "Grillmeister93": {
+          "gained": 154,
+          "possible": 162,
+          "percentage": 95.06
+        },
+        "Rufus377": {
+          "gained": 150,
+          "possible": 162,
+          "percentage": 92.59
+        },
+        "picnickbasket": {
+          "gained": 153,
+          "possible": 162,
+          "percentage": 94.44
+        },
+        "George III": {
+          "gained": 162,
+          "possible": 162,
+          "percentage": 100
+        },
+        "Reaper25908": {
+          "gained": 151,
+          "possible": 162,
+          "percentage": 93.21
+        },
+        "BleepityBleep": {
+          "gained": 148,
+          "possible": 162,
+          "percentage": 91.36
+        },
+        "Destroyer 12": {
+          "gained": 158,
+          "possible": 162,
+          "percentage": 97.53
+        },
+        "Robin": {
+          "gained": 147,
+          "possible": 162,
+          "percentage": 90.74
+        },
+        "brich-4": {
+          "gained": 158,
+          "possible": 162,
+          "percentage": 97.53
+        },
+        "Sboube78": {
+          "gained": 153,
+          "possible": 162,
+          "percentage": 94.44
+        },
+        "Abubakar Omary": {
+          "gained": 153,
+          "possible": 162,
+          "percentage": 94.44
+        },
+        "Z286": {
+          "gained": 132,
+          "possible": 162,
+          "percentage": 81.48
+        },
+        "JeepMonkey25": {
+          "gained": 0,
+          "possible": 54,
+          "percentage": 0
+        },
+        "Lady Fierr6": {
+          "gained": 130,
+          "possible": 162,
+          "percentage": 80.25
+        },
+        "N41NY": {
+          "gained": 155,
+          "possible": 162,
+          "percentage": 95.68
+        },
+        "Shmadz88": {
+          "gained": 142,
+          "possible": 162,
+          "percentage": 87.65
+        },
+        "Wilmy": {
+          "gained": 156,
+          "possible": 162,
+          "percentage": 96.3
+        },
+        "Cobra isola": {
+          "gained": 140,
+          "possible": 162,
+          "percentage": 86.42
+        },
+        "LUCKY WINER": {
+          "gained": 0,
+          "possible": 54,
+          "percentage": 0
+        },
+        "User21roulette": {
+          "gained": 142,
+          "possible": 162,
+          "percentage": 87.65
+        },
+        "Anthrix": {
+          "gained": 136,
+          "possible": 162,
+          "percentage": 83.95
+        },
+        "Yoni Targaryen": {
+          "gained": 147,
+          "possible": 162,
+          "percentage": 90.74
+        },
+        "TJMonkey25": {
+          "gained": 135,
+          "possible": 162,
+          "percentage": 83.33
+        },
+        "Tickner": {
+          "gained": 135,
+          "possible": 162,
+          "percentage": 83.33
+        },
+        "Gunny T Highway": {
+          "gained": 134,
+          "possible": 162,
+          "percentage": 82.72
+        },
+        "Letzte Zuflucht": {
+          "gained": 137,
+          "possible": 162,
+          "percentage": 84.57
+        },
+        "GalacLoli": {
+          "gained": 120,
+          "possible": 153,
+          "percentage": 78.43
+        },
+        "BoxHead": {
+          "gained": 136,
+          "possible": 162,
+          "percentage": 83.95
+        },
+        "Derrida": {
+          "gained": 147,
+          "possible": 162,
+          "percentage": 90.74
+        },
+        "Tipis": {
+          "gained": 149,
+          "possible": 162,
+          "percentage": 91.98
+        },
+        "martatwins": {
+          "gained": 139,
+          "possible": 162,
+          "percentage": 85.8
+        },
+        "The Snyper": {
+          "gained": 139,
+          "possible": 162,
+          "percentage": 85.8
+        },
+        "Tigertom": {
+          "gained": 142,
+          "possible": 162,
+          "percentage": 87.65
+        },
+        "Angelina31": {
+          "gained": 127,
+          "possible": 162,
+          "percentage": 78.4
+        },
+        "Artem67": {
+          "gained": 124,
+          "possible": 162,
+          "percentage": 76.54
+        },
+        "s1mple0": {
+          "gained": 137,
+          "possible": 162,
+          "percentage": 84.57
+        },
+        "Rick265": {
+          "gained": 137,
+          "possible": 162,
+          "percentage": 84.57
+        },
+        "Angriest Angel": {
+          "gained": 142,
+          "possible": 162,
+          "percentage": 87.65
+        },
+        "13ee12": {
+          "gained": 139,
+          "possible": 162,
+          "percentage": 85.8
+        },
+        "LilSis": {
+          "gained": 0,
+          "possible": 54,
+          "percentage": 0
+        },
+        "Schlem": {
+          "gained": 87,
+          "possible": 108,
+          "percentage": 80.56
+        },
+        "Yoni": {
+          "gained": 135,
+          "possible": 162,
+          "percentage": 83.33
+        },
+        "Stevaustin": {
+          "gained": 127,
+          "possible": 162,
+          "percentage": 78.4
+        },
+        "pri000": {
+          "gained": 83,
+          "possible": 162,
+          "percentage": 51.23
+        },
+        "Snaccysnaccccc": {
+          "gained": 119,
+          "possible": 162,
+          "percentage": 73.46
+        },
+        "javitwins": {
+          "gained": 118,
+          "possible": 162,
+          "percentage": 72.84
+        },
+        "Katrophe": {
+          "gained": 141,
+          "possible": 162,
+          "percentage": 87.04
+        },
+        "Psycomantis": {
+          "gained": 128,
+          "possible": 162,
+          "percentage": 79.01
+        },
+        "Juanjo2230": {
+          "gained": 116,
+          "possible": 162,
+          "percentage": 71.6
+        },
+        "baba2": {
+          "gained": 134,
+          "possible": 162,
+          "percentage": 82.72
+        },
+        "Deltaco": {
+          "gained": 121,
+          "possible": 162,
+          "percentage": 74.69
+        },
+        "Lv21": {
+          "gained": 138,
+          "possible": 162,
+          "percentage": 85.19
+        },
+        "Carlosx6": {
+          "gained": 126,
+          "possible": 162,
+          "percentage": 77.78
+        },
+        "laquette": {
+          "gained": 104,
+          "possible": 153,
+          "percentage": 67.97
+        },
+        "WeaponLoki": {
+          "gained": 121,
+          "possible": 162,
+          "percentage": 74.69
+        },
+        "Baron 72": {
+          "gained": 115,
+          "possible": 162,
+          "percentage": 70.99
+        },
+        "Makī": {
+          "gained": 124,
+          "possible": 162,
+          "percentage": 76.54
+        },
+        "Incubus123": {
+          "gained": 125,
+          "possible": 162,
+          "percentage": 77.16
+        },
+        "Micramonyl": {
+          "gained": 102,
+          "possible": 153,
+          "percentage": 66.67
+        },
+        "Rysy Bisi": {
+          "gained": 120,
+          "possible": 162,
+          "percentage": 74.07
+        },
+        "Unc Mongo Berry": {
+          "gained": 83,
+          "possible": 162,
+          "percentage": 51.23
+        },
+        "D0C": {
+          "gained": 136,
+          "possible": 162,
+          "percentage": 83.95
+        },
+        "robert1909": {
+          "gained": 122,
+          "possible": 162,
+          "percentage": 75.31
+        },
+        "Neon134": {
+          "gained": 106,
+          "possible": 162,
+          "percentage": 65.43
+        },
+        "plagiste": {
+          "gained": 87,
+          "possible": 162,
+          "percentage": 53.7
+        },
+        "Gurd76": {
+          "gained": 90,
+          "possible": 162,
+          "percentage": 55.56
+        },
+        "Naruto Hero": {
+          "gained": 126,
+          "possible": 162,
+          "percentage": 77.78
+        },
+        "hi ya": {
+          "gained": 105,
+          "possible": 162,
+          "percentage": 64.81
+        },
+        "Hullman": {
+          "gained": 107,
+          "possible": 162,
+          "percentage": 66.05
+        },
+        "ybid": {
+          "gained": 73,
+          "possible": 162,
+          "percentage": 45.06
+        },
+        "ArVi": {
+          "gained": 92,
+          "possible": 162,
+          "percentage": 56.79
+        },
+        "LungDoc": {
+          "gained": 82,
+          "possible": 162,
+          "percentage": 50.62
+        },
+        "Road2creation": {
+          "gained": 76,
+          "possible": 162,
+          "percentage": 46.91
+        },
+        "Monsegur": {
+          "gained": 109,
+          "possible": 162,
+          "percentage": 67.28
+        }
+      }
+    }
+  ],
+  "baseline": {
+    "sourceWeeks": [
+      "April S1",
+      "April S2",
+      "April S3",
+      "April S4"
+    ],
+    "n": 4,
+    "avgTotalPoints": 4115845374.25,
+    "avgPctGreenWeek": 0.46295833333333336,
+    "avgDiamondsLostPct": 0.28941620466218415,
+    "avgPointsPerDay": {
+      "Monday": 728635400.5,
+      "Tuesday": 425938145.25,
+      "Wednesday": 423664208.75,
+      "Thursday": 1100022308.75,
+      "Friday": 459542022.5,
+      "Saturday": 978043288.5
+    },
+    "avgPctGreenPerDay": {
+      "Monday": 0.6105,
+      "Tuesday": 0.29425,
+      "Wednesday": 0.28300000000000003,
+      "Thursday": 0.7355,
+      "Friday": 0.3215,
+      "Saturday": 0.533
+    },
+    "avgCoffersLostPerDay": {
+      "Monday": 0.76,
+      "Tuesday": 1.6600000000000001,
+      "Wednesday": 1.7625,
+      "Thursday": 0.7150000000000001,
+      "Friday": 1.7725,
+      "Saturday": 1.6775
+    }
+  }
+}
