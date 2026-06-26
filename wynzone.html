@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>WYN ZONE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink-0:#0a0604; --ink-1:#18120c; --ink-2:#251a11; --ink-3:#3a2a1b;
+    --paper:#f4e6cd; --paper-dim:#b8a589;
+    --orange:#f16a1d; --orange-2:#ff8a3a; --gold:#ffef69; --gold-deep:#c89b2c;
+    --green:#4caf50; --red:#d92027;
+    --bg-top:#0c0f14; --bg-mid:#0a0a09; --bg-warm:#1a1006;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    background:
+      radial-gradient(1100px 520px at 50% 6%, rgba(241,106,29,.12), transparent 60%),
+      linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 48%, var(--bg-warm) 100%);
+    background-attachment:fixed;
+    color:var(--paper);
+    min-height:100vh;
+    display:flex; flex-direction:column; align-items:center;
+    padding:0 20px 60px;
+  }
+  .wrap{ width:100%; max-width:1120px; position:relative; }
+
+  /* Logo de la alianza, pequeño, arriba a la derecha */
+  .alliance-logo{
+    position:absolute; top:14px; right:6px; z-index:5;
+    width:74px; height:auto; opacity:.92;
+    filter:drop-shadow(0 4px 14px rgba(0,0,0,.6));
+  }
+  @media (max-width:600px){ .alliance-logo{ width:54px; top:10px; right:2px; } }
+
+  /* ---------- HERO con LOGO transparente ---------- */
+  .hero{ text-align:center; padding-top:22px; }
+  .logo-wynzone{
+    width:100%; max-width:520px; height:auto; display:block; margin:0 auto -6px;
+    filter:drop-shadow(0 8px 30px rgba(241,106,29,.35));
+  }
+  .hero-eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:.34em;
+    text-transform:uppercase; color:var(--gold-deep); margin-top:2px;
+  }
+  .hero-sub{
+    color:var(--paper-dim); font-size:clamp(14px,2.2vw,16px);
+    max-width:580px; margin:12px auto 0; line-height:1.55;
+  }
+
+  /* ---------- CIFRAS DEL CLAN ---------- */
+  .stats{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+    margin:36px 0 8px;
+  }
+  .stat{
+    background:linear-gradient(180deg, rgba(37,26,17,.6), rgba(24,18,12,.6));
+    border:1px solid var(--ink-2); border-radius:14px; padding:20px 14px; text-align:center;
+  }
+  .stat .num{
+    font-family:'Oswald',sans-serif; font-weight:700; font-size:clamp(28px,5vw,42px);
+    color:var(--orange-2); line-height:1; text-shadow:0 0 22px rgba(241,106,29,.3);
+  }
+  .stat .lbl{
+    font-family:'JetBrains Mono',monospace; font-size:11.5px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--paper-dim); margin-top:9px;
+  }
+
+  /* ---------- TÍTULOS DE SECCIÓN (estilo portada) ---------- */
+  .section-eyebrow{
+    font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.28em;
+    text-transform:uppercase; color:var(--orange); text-align:center; margin:54px 0 6px;
+  }
+  .section-title{
+    font-family:'Oswald',sans-serif; font-weight:700; font-size:clamp(26px,5vw,40px);
+    letter-spacing:.02em; text-align:center; color:var(--paper);
+    text-shadow:0 0 26px rgba(241,106,29,.22);
+  }
+  .section-sub{
+    color:var(--paper-dim); font-size:15px; text-align:center;
+    max-width:580px; margin:8px auto 26px; line-height:1.55;
+  }
+
+  /* ---------- EJE: Sarge (imagen izq) + chat (der) ---------- */
+  .stage{ display:grid; grid-template-columns:300px 1fr; gap:24px; align-items:stretch; }
+  .sarge-col{ display:flex; flex-direction:column; align-items:center; }
+  .sarge-portrait{
+    width:100%; max-width:300px; border-radius:14px; border:1px solid var(--gold-deep);
+    box-shadow:0 16px 44px rgba(0,0,0,.55), 0 0 0 4px rgba(200,155,44,.08);
+  }
+  .badge-onduty{
+    display:inline-flex; align-items:center; gap:7px; margin-top:14px;
+    font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--green);
+    border:1px solid var(--ink-3); border-radius:20px; padding:5px 13px;
+  }
+  .dot-g{ width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 8px var(--green); }
+  .sarge-name{ font-family:'Oswald',sans-serif; font-weight:700; font-size:22px;
+    letter-spacing:.04em; text-transform:uppercase; margin-top:12px; color:var(--paper); }
+  .sarge-role{ font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--gold-deep);
+    letter-spacing:.12em; text-transform:uppercase; margin-top:3px; }
+  .sarge-hint{ font-size:13px; color:var(--paper-dim); line-height:1.5; margin-top:14px;
+    text-align:center; max-width:280px; }
+
+  .chat-col{ display:flex; }
+  .chat-box{
+    background:linear-gradient(180deg, var(--ink-1), #120b06);
+    border:1px solid var(--gold-deep); border-radius:14px; overflow:hidden;
+    box-shadow:0 16px 48px rgba(0,0,0,.5); display:flex; flex-direction:column; flex:1; width:100%;
+  }
+  .chat-bar{ display:flex; align-items:center; gap:7px;
+    padding:11px 14px; background:var(--ink-2); border-bottom:1px solid var(--ink-3); }
+  .dot{ width:11px; height:11px; border-radius:50%; display:inline-block; }
+  .dot.r{background:var(--red);} .dot.y{background:var(--gold-deep);} .dot.g{background:var(--green);}
+  .chat-title{ margin-left:8px; font-family:'JetBrains Mono',monospace; font-size:12px;
+    color:var(--paper-dim); letter-spacing:.06em; flex:1; }
+  .expand-btn{ font-family:'JetBrains Mono',monospace; font-size:12px;
+    background:transparent; border:1px solid var(--ink-3); color:var(--paper-dim);
+    padding:5px 11px; border-radius:7px; cursor:pointer; transition:.2s; }
+  .expand-btn:hover{ color:var(--orange-2); border-color:var(--orange); }
+  /* El iframe RELLENA toda la caja del chat (sin altura fija → no deja hueco) */
+  .chat-frame{ width:100%; flex:1; min-height:0; border:0; display:block; background:var(--ink-0); }
+
+  /* Estado normal: el chat tiene la MISMA altura que la imagen de Sarge.
+     Sarge_v2.png es 1024x1536 (ratio 1.5): a 300px de ancho = 450px de alto.
+     Fijamos la caja del chat a 450px para que encaje exactamente con la imagen. */
+  .stage{ align-items:start; }
+  .chat-box{ height:450px; }
+
+  /* Pantalla completa: Sarge a la izquierda y el chat llena TODO el alto de la
+     ventana automáticamente (sin botones, sin zona muerta). La altura del chat
+     y del iframe la fija JS al alto exacto de la ventana. */
+  .stage.fullscreen{
+    position:fixed; inset:0; z-index:9999; max-width:none; margin:0;
+    background:linear-gradient(180deg, var(--bg-top), var(--bg-warm));
+    padding:18px; gap:18px; grid-template-columns:300px 1fr;
+    align-items:start;
+  }
+  .stage.fullscreen .sarge-portrait{ max-width:280px; }
+  @media (max-width:780px){ .stage.fullscreen{ grid-template-columns:1fr; } }
+
+  /* ---------- DASHBOARD ---------- */
+  .dash-row{ margin-top:26px; text-align:center; }
+  .dash-link{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:'Oswald',sans-serif; font-weight:700; font-size:18px;
+    letter-spacing:.03em; text-transform:uppercase; color:#1a0f06; text-decoration:none;
+    background:linear-gradient(180deg, var(--orange-2), var(--orange));
+    padding:14px 30px; border-radius:12px;
+    box-shadow:0 10px 26px rgba(241,106,29,.4); transition:transform .15s, filter .15s;
+  }
+  .dash-link:hover{ transform:translateY(-2px); filter:brightness(1.06); }
+  .dash-note{ font-size:12px; color:var(--paper-dim); margin-top:9px;
+    font-family:'JetBrains Mono',monospace; letter-spacing:.03em; }
+
+  /* ---------- TARJETAS "qué puedes hacer" ---------- */
+  .cards{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+  .card{
+    background:linear-gradient(180deg, var(--ink-1), #140d07);
+    border:1px solid var(--ink-2); border-radius:14px; padding:22px 18px; text-align:left;
+    transition:.2s;
+  }
+  .card:hover{ border-color:var(--gold-deep); transform:translateY(-3px); }
+  .card .ico{ font-size:30px; display:block; margin-bottom:10px; }
+  .card h3{ font-family:'Oswald',sans-serif; font-size:17px; font-weight:600;
+    letter-spacing:.02em; color:var(--paper); margin-bottom:7px; }
+  .card p{ font-size:13.5px; color:var(--paper-dim); line-height:1.5; }
+
+  /* ---------- LEMA / arenga ---------- */
+  .creed{
+    margin-top:54px; padding:34px 28px; border-radius:16px; text-align:center;
+    background:linear-gradient(180deg, rgba(37,26,17,.5), rgba(24,18,12,.5));
+    border:1px solid var(--ink-2);
+  }
+  .creed q{
+    font-family:'Oswald',sans-serif; font-weight:600; font-style:italic;
+    font-size:clamp(18px,3.2vw,26px); color:var(--paper); line-height:1.4;
+    display:block; quotes:none;
+  }
+  .creed .by{ font-family:'JetBrains Mono',monospace; font-size:12px;
+    color:var(--gold-deep); letter-spacing:.16em; text-transform:uppercase; margin-top:14px; }
+
+  footer{ margin-top:54px; font-size:12px; color:var(--paper-dim);
+    font-family:'JetBrains Mono',monospace; letter-spacing:.06em; text-align:center; }
+
+  @media (max-width:880px){ .stats,.cards{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:780px){
+    .stage{ grid-template-columns:1fr; }
+    .sarge-portrait{ max-width:220px; }
+    .chat-frame{ height:500px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <img class="alliance-logo" src="WYN%20Logo.png" alt="WYN alliance logo">
+
+  <!-- HERO -->
+  <div class="hero">
+    <img class="logo-wynzone" src="wynzone_logo_r.png" alt="WYN ZONE">
+    <div class="hero-eyebrow">Members Only · Server 221</div>
+    <p class="hero-sub">The inner circle of [WYN] World You Need. Sarge runs the floor — and the real intel lives here.</p>
+  </div>
+
+  <!-- CIFRAS DEL CLAN -->
+  <div class="stats">
+    <div class="stat"><div class="num">96</div><div class="lbl">Active members</div></div>
+    <div class="stat"><div class="num">30</div><div class="lbl">Countries</div></div>
+    <div class="stat"><div class="num">3.7B</div><div class="lbl">Weekly points</div></div>
+    <div class="stat"><div class="num">#1</div><div class="lbl">Gold Group</div></div>
+  </div>
+
+  <!-- SARGE -->
+  <div class="section-eyebrow">Your AI Sergeant</div>
+  <h2 class="section-title">Talk to Sarge</h2>
+  <p class="section-sub">Ask anything about Last Z, or how a teammate is doing. Give him the alliance code to unlock the real intel.</p>
+
+  <div class="stage" id="stage">
+    <div class="sarge-col">
+      <img class="sarge-portrait" src="Sarge_v2.png" alt="Sarge">
+      <span class="badge-onduty"><span class="dot-g"></span>On Duty</span>
+      <div class="sarge-name">Sarge</div>
+      <div class="sarge-role">Member #101 · WYN</div>
+      <p class="sarge-hint">He speaks your language. No alliance code, no real intel.</p>
+    </div>
+    <div class="chat-col">
+      <div class="chat-box">
+        <div class="chat-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <span class="chat-title">SARGE · live chat</span>
+          <button class="expand-btn" id="expandBtn" onclick="toggleFull()">⤢ Expand</button>
+        </div>
+        <iframe class="chat-frame" id="chatFrame"
+                src="https://pumpin0564-lastzsurvival.hf.space"
+                title="Sarge chat" allow="clipboard-write"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="dash-row">
+    <a class="dash-link" href="DASHBOARD_URL_SECRETA" target="_blank" rel="noopener">📊 Open the Dashboard</a>
+    <p class="dash-note">Opens in a new tab · Sarge stays open</p>
+  </div>
+
+  <!-- QUÉ PUEDES HACER -->
+  <div class="section-eyebrow">Inside the zone</div>
+  <h2 class="section-title">What you can do here</h2>
+  <p class="section-sub">Everything WYN, in one place.</p>
+  <div class="cards">
+    <div class="card"><span class="ico">🎖️</span><h3>Ask Sarge</h3><p>Heroes, AD strategy, base layouts, events — he answers from trusted guides and videos.</p></div>
+    <div class="card"><span class="ico">📊</span><h3>The Dashboard</h3><p>Full rankings, coffers, daily analysis and the whole campaign history.</p></div>
+    <div class="card"><span class="ico">📈</span><h3>Your numbers</h3><p>Ask Sarge how you (or any teammate) are doing this week and across the season.</p></div>
+    <div class="card"><span class="ico">📨</span><h3>Anonymous mailbox</h3><p>Drop a suggestion or complaint — fully anonymous. Just tell Sarge you want to leave a message for command.</p></div>
+  </div>
+
+  <!-- LEMA -->
+  <div class="creed">
+    <q>Team spirit- Have fun- Last Z Survival</q>
+  </div>
+
+  <footer>[WYN] WORLD YOU NEED · Last Z Survival · Server 221</footer>
+
+</div>
+
+<script>
+  function chatBox(){ return document.querySelector('.chat-box'); }
+  function setFsHeight(){
+    var stage=document.getElementById('stage');
+    if(!stage.classList.contains('fullscreen')) return;
+    // alto exacto disponible = ventana menos el padding superior+inferior (18+18)
+    var h = window.innerHeight - 36;
+    chatBox().style.height = h + 'px';
+  }
+  function toggleFull(){
+    var stage=document.getElementById('stage');
+    var full=stage.classList.toggle('fullscreen');
+    document.getElementById('expandBtn').innerHTML = full ? '✕ Close' : '⤢ Expand';
+    document.body.style.overflow = full ? 'hidden' : '';
+    if(full){ setFsHeight(); }
+    else { chatBox().style.height = ''; }   // vuelve a los 450px del CSS normal
+  }
+  window.addEventListener('resize', setFsHeight);
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){
+      var stage=document.getElementById('stage');
+      if(stage.classList.contains('fullscreen')) toggleFull();
+    }
+  });
+</script>
+</body>
+</html>
