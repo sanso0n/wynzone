@@ -118,8 +118,10 @@
   .chat-box{
     background:linear-gradient(180deg, var(--ink-1), #120b06);
     border:1px solid var(--gold-deep); border-radius:14px; overflow:hidden;
-    box-shadow:0 16px 48px rgba(0,0,0,.5); display:flex; flex-direction:column; flex:1; width:100%;
+    box-shadow:0 16px 48px rgba(0,0,0,.5); display:flex; flex-direction:column; width:100%;
+    height:450px;   /* altura normal = alto de la imagen de Sarge */
   }
+  .chat-col{ flex:1; }
   .chat-bar{ display:flex; align-items:center; gap:7px;
     padding:11px 14px; background:var(--ink-2); border-bottom:1px solid var(--ink-3); }
   .dot{ width:11px; height:11px; border-radius:50%; display:inline-block; }
@@ -133,11 +135,7 @@
   /* El iframe RELLENA toda la caja del chat (sin altura fija → no deja hueco) */
   .chat-frame{ width:100%; flex:1; min-height:0; border:0; display:block; background:var(--ink-0); }
 
-  /* Estado normal: el chat tiene la MISMA altura que la imagen de Sarge.
-     Sarge_v2.png es 1024x1536 (ratio 1.5): a 300px de ancho = 450px de alto.
-     Fijamos la caja del chat a 450px para que encaje exactamente con la imagen. */
   .stage{ align-items:start; }
-  .chat-box{ height:450px; }
 
   /* Pantalla completa: Sarge a la izquierda y el chat llena TODO el alto de la
      ventana automáticamente (sin botones, sin zona muerta). La altura del chat
