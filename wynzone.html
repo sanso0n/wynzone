@@ -107,7 +107,14 @@
   .sarge-hint{ font-size:13px; color:var(--paper-dim); line-height:1.5; margin-top:14px;
     text-align:center; max-width:280px; }
 
-  .chat-col{ display:flex; }
+  .chat-col{ display:flex; flex-direction:column; }
+  .lang-banner{
+    background:linear-gradient(180deg, rgba(241,106,29,.18), rgba(241,106,29,.08));
+    border:1px solid var(--gold-deep); border-radius:10px;
+    padding:9px 14px; margin-bottom:10px; text-align:center;
+    font-family:'JetBrains Mono',monospace; font-size:12.5px; color:var(--gold);
+    letter-spacing:.02em;
+  }
   .chat-box{
     background:linear-gradient(180deg, var(--ink-1), #120b06);
     border:1px solid var(--gold-deep); border-radius:14px; overflow:hidden;
@@ -230,6 +237,7 @@
       <p class="sarge-hint">He speaks your language. No alliance code, no real intel.</p>
     </div>
     <div class="chat-col">
+      <div class="lang-banner">🌐 Sarge speaks YOUR language — just write to him in it · Habla tu idioma · Parle ta langue · 说你的语言</div>
       <div class="chat-box">
         <div class="chat-bar">
           <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
@@ -243,13 +251,18 @@
     </div>
   </div>
 
-  <!-- DASHBOARD: abre la URL secreta (impredecible) en pestaña aparte -->
+  <!-- DASHBOARD: el botón pide la clave de alianza; si es correcta abre la URL secreta -->
   <div class="dash-row">
-    <a class="dash-link" href="dash-hiw7dkkqw0hno88jqaoz/dashboard.html" target="_blank" rel="noopener">
+    <a class="dash-link" href="#" onclick="openDashboard(event)">
       📊 Open the Dashboard
     </a>
-    <p class="dash-note">Opens in a new tab · Sarge stays open</p>
+    <p class="dash-note">Enter the alliance code · opens in a new tab</p>
   </div>
+
+  <!-- (referencia antigua, ignorar)
+  pendiente de decidir cuándo/cómo aparece (acceso seguro).
+       De momento NO se muestra el botón: el dashboard solo se alcanza por su URL
+       secreta (dash-hiw7dkkqw0hno88jqaoz/dashboard.html), que de momento no se enlaza. -->
 
   <!-- QUÉ PUEDES HACER -->
   <div class="section-eyebrow">Inside the zone</div>
@@ -272,6 +285,37 @@
 </div>
 
 <script>
+  // ---- DASHBOARD: pide la clave, comprueba el hash, abre la URL secreta ----
+  // La clave NO se guarda en claro: solo su huella SHA-256. (Seguridad 'cortina':
+  // frena al curioso, no a un experto. Suficiente para datos de un juego.)
+  var DASH_URL  = "dash-hiw7dkkqw0hno88jqaoz/dashboard.html";
+  var DASH_HASH = "f0cbba18ab1b70029a5b3e62fd8ae7df641c45eb59a60fc9cefbad6f6bcbae8a";
+  var DASH_MAX_TRIES = 5;       // intentos máximos por sesión (anti-aporreo)
+  var dashTries = 0;
+  async function _sha256(txt){
+    var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(txt));
+    return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  }
+  async function openDashboard(ev){
+    ev.preventDefault();
+    if(dashTries >= DASH_MAX_TRIES){
+      alert("Too many tries, soldier. Reload the page and try again.");
+      return;
+    }
+    var code = prompt("Alliance code (" + (DASH_MAX_TRIES - dashTries) + " tries left):");
+    if(code===null) return;
+    var h = await _sha256(code.trim().toLowerCase());
+    if(h === DASH_HASH){
+      dashTries = 0;
+      window.open(DASH_URL, '_blank', 'noopener');
+    } else {
+      dashTries++;
+      var left = DASH_MAX_TRIES - dashTries;
+      if(left > 0) alert("Wrong code, soldier. " + left + " tr" + (left===1?"y":"ies") + " left.");
+      else alert("Wrong code. Access blocked — reload the page to try again.");
+    }
+  }
+
   function chatBox(){ return document.querySelector('.chat-box'); }
   function setFsHeight(){
     var stage=document.getElementById('stage');
