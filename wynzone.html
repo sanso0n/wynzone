@@ -305,7 +305,9 @@
     var h = await _sha256(code.trim().toLowerCase());
     if(h === DASH_HASH){
       dashTries = 0;
-      window.open(DASH_URL, '_blank', 'noopener');
+      // Navegación directa (window.open en pestaña nueva lo bloquea el navegador
+      // tras un prompt). Abre el dashboard en la misma pestaña; se vuelve con "atrás".
+      window.location.href = DASH_URL;
     } else {
       dashTries++;
       var left = DASH_MAX_TRIES - dashTries;
