@@ -108,8 +108,18 @@
     width: 100%; height: auto; display: block;
     filter: drop-shadow(0 6px 24px rgba(0,0,0,0.6));
   }
+  /* Logo wynZone (transparente) como encabezado central */
+  .logo-wynzone { max-width: 440px; width: 80%; }
+  .logo-wynzone img { filter: drop-shadow(0 8px 30px rgba(241,106,29,0.35)); }
+  /* Logo de la alianza, pequeño, arriba a la derecha */
+  .alliance-logo-corner {
+    position: absolute; top: 16px; right: 18px; z-index: 50;
+    width: 76px; height: auto; opacity: .92;
+    filter: drop-shadow(0 4px 14px rgba(0,0,0,0.6));
+  }
   @media (max-width: 480px) {
-    .logo { max-width: 240px; width: 65%; }
+    .logo-wynzone { max-width: 300px; width: 78%; }
+    .alliance-logo-corner { width: 52px; top: 10px; right: 10px; }
   }
 
   .alliance-name {
@@ -1345,6 +1355,56 @@
     .sarge-split{ grid-template-columns: 1fr; gap: 18px; }
     .sarge-portrait{ min-height: 360px; }
   }
+  /* ═══════════ SARGE embebido + dashboard (prefijo wz-) ═══════════ */
+  .wz-stage{ width:100%; max-width:1120px; margin:14px auto 0;
+    display:grid; grid-template-columns:300px 1fr; gap:24px; align-items:start; }
+  .wz-sarge-col{ display:flex; flex-direction:column; align-items:center; }
+  .wz-sarge-portrait{ width:100%; max-width:300px; border-radius:14px;
+    border:1px solid var(--gold-deep); box-shadow:0 16px 44px rgba(0,0,0,.55), 0 0 0 4px rgba(200,155,44,.08); }
+  .wz-badge-onduty{ display:inline-flex; align-items:center; gap:7px; margin-top:14px;
+    font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--green); border:1px solid var(--ink-3);
+    border-radius:20px; padding:5px 13px; }
+  .wz-dot-g{ width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 8px var(--green); }
+  .wz-sarge-name{ font-family:'Oswald',sans-serif; font-weight:700; font-size:22px;
+    letter-spacing:.04em; text-transform:uppercase; margin-top:12px; color:var(--paper); }
+  .wz-sarge-role{ font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--gold-deep);
+    letter-spacing:.12em; text-transform:uppercase; margin-top:3px; }
+  .wz-sarge-hint{ font-size:13px; color:var(--paper-dim); line-height:1.5; margin-top:14px;
+    text-align:center; max-width:280px; }
+  .wz-chat-col{ display:flex; flex-direction:column; flex:1; }
+  .wz-lang-banner{ background:linear-gradient(180deg, rgba(241,106,29,.18), rgba(241,106,29,.08));
+    border:1px solid var(--gold-deep); border-radius:10px; padding:9px 14px; margin-bottom:10px;
+    text-align:center; font-family:'JetBrains Mono',monospace; font-size:12.5px; color:var(--gold); letter-spacing:.02em; }
+  .wz-chat-box{ background:linear-gradient(180deg, var(--ink-1), #120b06);
+    border:1px solid var(--gold-deep); border-radius:14px; overflow:hidden;
+    box-shadow:0 16px 48px rgba(0,0,0,.5); display:flex; flex-direction:column; width:100%; height:450px; }
+  .wz-chat-bar{ display:flex; align-items:center; gap:7px; padding:11px 14px;
+    background:var(--ink-2); border-bottom:1px solid var(--ink-3); }
+  .wz-dot{ width:11px; height:11px; border-radius:50%; display:inline-block; }
+  .wz-dot.r{background:var(--red);} .wz-dot.y{background:var(--gold-deep);} .wz-dot.g{background:var(--green);}
+  .wz-chat-title{ margin-left:8px; font-family:'JetBrains Mono',monospace; font-size:12px;
+    color:var(--paper-dim); letter-spacing:.06em; flex:1; }
+  .wz-expand-btn{ font-family:'JetBrains Mono',monospace; font-size:12px; background:transparent;
+    border:1px solid var(--ink-3); color:var(--paper-dim); padding:5px 11px; border-radius:7px; cursor:pointer; transition:.2s; }
+  .wz-expand-btn:hover{ color:var(--orange-2); border-color:var(--orange); }
+  .wz-chat-frame{ width:100%; flex:1; min-height:0; border:0; display:block; background:var(--ink-0); }
+  .wz-stage.fullscreen{ position:fixed; inset:0; z-index:9999; max-width:none; margin:0;
+    background:linear-gradient(180deg, var(--ink-0), #1a1006); padding:18px; gap:18px;
+    grid-template-columns:300px 1fr; align-items:start; }
+  .wz-stage.fullscreen .wz-sarge-portrait{ max-width:280px; }
+  .wz-dash-row{ width:100%; max-width:1120px; margin:24px auto 0; text-align:center; }
+  .wz-dash-link{ display:inline-flex; align-items:center; gap:10px; font-family:'Oswald',sans-serif;
+    font-weight:700; font-size:18px; letter-spacing:.03em; text-transform:uppercase; color:#1a0f06;
+    text-decoration:none; background:linear-gradient(180deg, var(--orange-2), var(--orange));
+    padding:14px 30px; border-radius:12px; box-shadow:0 10px 26px rgba(241,106,29,.4); transition:transform .15s, filter .15s; }
+  .wz-dash-link:hover{ transform:translateY(-2px); filter:brightness(1.06); }
+  .wz-dash-note{ font-size:12px; color:var(--paper-dim); margin-top:9px;
+    font-family:'JetBrains Mono',monospace; letter-spacing:.03em; }
+  @media (max-width:780px){
+    .wz-stage{ grid-template-columns:1fr; } .wz-sarge-portrait{ max-width:220px; } .wz-chat-box{ height:480px; }
+    .wz-stage.fullscreen{ grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
@@ -1354,8 +1414,10 @@
 <main>
 
   <!-- ════════ PORTADA ════════ -->
+  <img class="alliance-logo-corner" src="WYN%20Logo.png?v=20260525c" alt="WYN alliance patch">
+
   <section class="hero">
-    <div class="logo"><img src="WYN%20Logo.png?v=20260525c" alt="WYN World You Need patch"></div>
+    <div class="logo logo-wynzone"><img src="wynzone_logo_r.png" alt="WYN ZONE"></div>
     <div class="tagline">
       Team Spirit<span class="sep">·</span>Have Fun<span class="sep">·</span>Last Z Survival
     </div>
@@ -1379,37 +1441,33 @@
       </div>
     </div>
 
-    <!-- ═══════════ SARGE · Propuesta B · split portrait + terminal ═══════════ -->
-    <div class="lang-hint">Sarge guards the WYN ZONE · chat &amp; dashboard · speaks your language</div>
-
-    <div class="sarge-split">
-      <div class="sarge-portrait">
-        <span class="badge-onduty"><span class="dot-g"></span>On Duty</span>
-        <img src="Sarge_v2.png" alt="Sgt. Sarge">
-        <span class="rank">Sgt. Sarge · WYN 101</span>
+    <!-- ═══════════ SARGE · chat embebido + dashboard ═══════════ -->
+    <div class="wz-stage" id="stage">
+      <div class="wz-sarge-col">
+        <img class="wz-sarge-portrait" src="Sarge_v2.png" alt="Sarge">
+        <span class="wz-badge-onduty"><span class="wz-dot-g"></span>On Duty</span>
+        <div class="wz-sarge-name">Sarge</div>
+        <div class="wz-sarge-role">Member #101 · WYN</div>
+        <p class="wz-sarge-hint">He speaks your language. No alliance code, no real intel.</p>
       </div>
-
-      <div class="sarge-chat">
-        <!-- The whole terminal is a link to the WYN ZONE page (Sarge + dashboard).
-             "Bouncer" model: the dashboard is NOT linked from the public homepage;
-             you reach the zone through here, and Sarge guards it. -->
-        <a class="terminal terminal-link" href="wynzone.html">
-          <div class="terminal-bar">
-            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-            <span>SECURE COMM</span>
-            <span class="name">· SARGE</span>
+      <div class="wz-chat-col">
+        <div class="wz-lang-banner">🌐 Sarge speaks YOUR language — just write to him in it · Habla tu idioma · Parle ta langue · 说你的语言</div>
+        <div class="wz-chat-box">
+          <div class="wz-chat-bar">
+            <span class="wz-dot r"></span><span class="wz-dot y"></span><span class="wz-dot g"></span>
+            <span class="wz-chat-title">SARGE · live chat</span>
+            <button class="wz-expand-btn" id="expandBtn" onclick="toggleFull()">⤢ Expand</button>
           </div>
-          <div class="terminal-body">
-            <div class="t-line"><span class="sarge">SARGE:</span> Wynner. I guard the gate to the WYN ZONE.</div>
-            <div class="t-line"><span class="sarge">SARGE:</span> Ask me anything about Last Z — heroes, AD strategy, base layouts. I speak your language.</div>
-            <div class="t-line"><span class="sarge">SARGE:</span> Want the dashboard and the real intel? Step inside the WYN ZONE.<span class="t-typing"></span></div>
-          </div>
-          <div class="terminal-input">
-            <span class="ps">visitor&gt;</span>
-            <span class="fake-input">Click to talk to Sarge →</span>
-          </div>
-        </a>
+          <iframe class="wz-chat-frame" id="chatFrame"
+                  src="https://pumpin0564-lastzsurvival.hf.space"
+                  title="Sarge chat" allow="clipboard-write"></iframe>
+        </div>
       </div>
+    </div>
+
+    <div class="wz-dash-row">
+      <a class="wz-dash-link" href="#" onclick="openDashboard(event)">📊 Open the Dashboard</a>
+      <p class="wz-dash-note">Enter the alliance code · opens in a new tab</p>
     </div>
 
     <div class="scroll-cue">
@@ -2060,6 +2118,46 @@ window.WYN_DATA = {"weekId": "GG_Mayo_W4", "cycleId": "Gold_Group_Mayo", "weekNu
     return String(s||'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
 })();
+</script>
+
+<script>
+  /* ── SARGE embebido: expandir + dashboard con clave ── */
+  var DASH_URL  = "dash-hiw7dkkqw0hno88jqaoz/dashboard.html";
+  var DASH_HASH = "f0cbba18ab1b70029a5b3e62fd8ae7df641c45eb59a60fc9cefbad6f6bcbae8a";
+  var DASH_MAX_TRIES = 5, dashTries = 0;
+  async function _sha256(txt){
+    var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(txt));
+    return Array.from(new Uint8Array(buf)).map(function(b){return b.toString(16).padStart(2,'0');}).join('');
+  }
+  async function openDashboard(ev){
+    ev.preventDefault();
+    if(dashTries >= DASH_MAX_TRIES){ alert("Too many tries, soldier. Reload the page and try again."); return; }
+    var code = prompt("Alliance code (" + (DASH_MAX_TRIES - dashTries) + " tries left):");
+    if(code===null) return;
+    var h = await _sha256(code.trim().toLowerCase());
+    if(h === DASH_HASH){ dashTries = 0; window.location.href = DASH_URL; }
+    else { dashTries++; var left = DASH_MAX_TRIES - dashTries;
+      if(left>0) alert("Wrong code, soldier. " + left + " tr" + (left===1?"y":"ies") + " left.");
+      else alert("Wrong code. Access blocked — reload the page to try again."); }
+  }
+  function wzChatBox(){ return document.querySelector('.wz-chat-box'); }
+  function wzSetFsHeight(){
+    var stage=document.getElementById('stage');
+    if(!stage || !stage.classList.contains('fullscreen')) return;
+    wzChatBox().style.height = (window.innerHeight - 36) + 'px';
+  }
+  function toggleFull(){
+    var stage=document.getElementById('stage');
+    var full=stage.classList.toggle('fullscreen');
+    document.getElementById('expandBtn').innerHTML = full ? '✕ Close' : '⤢ Expand';
+    document.body.style.overflow = full ? 'hidden' : '';
+    if(full){ wzSetFsHeight(); } else { wzChatBox().style.height=''; }
+  }
+  window.addEventListener('resize', wzSetFsHeight);
+  document.addEventListener('keydown', function(e){
+    if(e.key==='Escape'){ var s=document.getElementById('stage');
+      if(s && s.classList.contains('fullscreen')) toggleFull(); }
+  });
 </script>
 </body>
 </html>
