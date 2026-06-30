@@ -1403,7 +1403,10 @@
     font-family:'JetBrains Mono',monospace; letter-spacing:.03em; }
   @media (max-width:780px){
     .wz-stage{ grid-template-columns:1fr; } .wz-sarge-portrait{ max-width:220px; } .wz-chat-box{ height:480px; }
-    .wz-stage.fullscreen{ grid-template-columns:1fr; }
+    /* MÓVIL en fullscreen: ocultar la columna de Sarge y que el chat ocupe TODA la
+       pantalla (en móvil no caben los dos; si no, el chat queda fuera y se bloquea). */
+    .wz-stage.fullscreen{ grid-template-columns:1fr; padding:8px; }
+    .wz-stage.fullscreen .wz-sarge-col{ display:none; }
   }
 </style>
 </head>
@@ -2144,7 +2147,9 @@ window.WYN_DATA = {"weekId": "GG_Mayo_W4", "cycleId": "Gold_Group_Mayo", "weekNu
   function wzSetFsHeight(){
     var stage=document.getElementById('stage');
     if(!stage || !stage.classList.contains('fullscreen')) return;
-    wzChatBox().style.height = (window.innerHeight - 36) + 'px';
+    // padding del stage en fullscreen: 8px en móvil (≤780), 18px en escritorio
+    var pad = window.innerWidth <= 780 ? 16 : 36;
+    wzChatBox().style.height = (window.innerHeight - pad) + 'px';
   }
   function toggleFull(){
     var stage=document.getElementById('stage');
