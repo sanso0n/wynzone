@@ -109,7 +109,7 @@
     filter: drop-shadow(0 6px 24px rgba(0,0,0,0.6));
   }
   /* Logo wynZone (transparente) como encabezado central */
-  .logo-wynzone { max-width: 440px; width: 80%; }
+  .logo-wynzone { max-width: 900px; width: 92%; }
   .logo-wynzone img { filter: drop-shadow(0 8px 30px rgba(241,106,29,0.35)); }
   /* Logo de la alianza, pequeño, arriba a la derecha */
   .alliance-logo-corner {
@@ -147,11 +147,14 @@
   /* KPIs grandes en portada */
   .id-card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 14px;
-    max-width: 520px;
+    max-width: 1100px;
     width: 100%;
     margin-bottom: 40px;
+  }
+  @media (max-width: 900px) {
+    .id-card { grid-template-columns: repeat(2, 1fr); max-width: 720px; }
   }
   .id-stat {
     background: rgba(10,6,4,0.75);
